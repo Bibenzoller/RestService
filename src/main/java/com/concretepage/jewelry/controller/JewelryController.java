@@ -3,6 +3,8 @@ package com.concretepage.jewelry.controller;
 import com.concretepage.auth.sucurity.util.CreateUserService;
 import com.concretepage.jewelry.entity.Jewelry;
 import com.concretepage.jewelry.service.JewelryService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -16,12 +18,15 @@ import java.util.List;
 
 @RestController
 @RequestMapping("jewelry")
+@Api(value="jewelry", description="Operations to interact with goods")
+
 public class JewelryController {
 
 	@Autowired
 	private JewelryService jewelryService;
 	CreateUserService create = new CreateUserService();
 
+	@ApiOperation(value = "Add a good in DB", response = String.class)
 
 	@RequestMapping(value = "/add", method = RequestMethod.POST,produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
 	public ResponseEntity<String> createUser(@RequestBody Jewelry jewelry, UriComponentsBuilder ucBuilder) {
@@ -37,6 +42,9 @@ public class JewelryController {
 		return new ResponseEntity<String >("complete", HttpStatus.CREATED);
 
 	}
+
+	@ApiOperation(value = "Get a good from DB by barcode", response = Jewelry.class)
+
 	@RequestMapping(value = "/get/{barcode}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
 	public ResponseEntity<Jewelry> getJewelry(@PathVariable("barcode") String barCode) {
 		System.out.println("Fetching Jewelry with barcode " + barCode);
@@ -50,6 +58,8 @@ public class JewelryController {
 		return new ResponseEntity<Jewelry>(jewelry, HttpStatus.OK);
 	}
 
+	@ApiOperation(value = "Get all good in DB", response = Jewelry[].class)
+
 	@RequestMapping(value = "/getall", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
 	public ResponseEntity<List<Jewelry>> getJewelry() {
 		 List<Jewelry> result = jewelryService.getAllJewelry();
@@ -62,15 +72,4 @@ public class JewelryController {
 		return new ResponseEntity<List<Jewelry>>(result, HttpStatus.OK);
 	}
 
-	@RequestMapping(value = "/test", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
-	public ResponseEntity<List<Jewelry>> test() {
-		List<Jewelry> result = jewelryService.getAllJewelry();
-
-		if (result == null) {
-			System.out.println(" not found");
-			return new ResponseEntity<List<Jewelry>>(HttpStatus.NOT_FOUND);
-		}
-
-		return new ResponseEntity<List<Jewelry>>(result, HttpStatus.OK);
-	}
 } 

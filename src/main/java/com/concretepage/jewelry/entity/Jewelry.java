@@ -1,4 +1,6 @@
 package com.concretepage.jewelry.entity;
+import io.swagger.annotations.ApiModelProperty;
+
 import java.io.Serializable;
 
 import javax.persistence.Column;
@@ -14,6 +16,8 @@ public class Jewelry implements Serializable {
 
 	@Id
 	@Column(name="bar_code",  unique=true,columnDefinition="VARCHAR(64)")
+	@ApiModelProperty(notes = "The barCode of good")
+
 	private String barCode;
 	public Jewelry() {
 	}
@@ -26,7 +30,11 @@ public class Jewelry implements Serializable {
 	}
 
 	@Column(name="article")
-    private String article;
+	@ApiModelProperty(notes = "The article of good")
+
+	private String article;
+
+	@ApiModelProperty(notes = "The category of good")
 	@Column(name="category")
 	private String category;
 
@@ -39,6 +47,8 @@ public class Jewelry implements Serializable {
 	}
 
 	@Column(name="cost")
+	@ApiModelProperty(notes = "The cost of good")
+
 	private Integer cost;
 
 	public static long getSerialVersionUID() {

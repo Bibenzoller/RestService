@@ -16,7 +16,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import com.concretepage.auth.entity.User;
 public class SpringRestClient {
-    public static final String REST_SERVICE_URI = "http://gimbarrwow2.azurewebsites.net/jewelry";
+    public static final String REST_SERVICE_URI = "http://localhost:8080/jewelry";
 
     /*
      * Add HTTP Authorization header, using Basic-Authentication to send user-credentials.
@@ -130,7 +130,7 @@ try{
         headers.setContentType(MediaType.APPLICATION_JSON);
         RestTemplate restTemplate = getRestTemplate();
         HttpEntity<String> requestEntity = new HttpEntity<String>(headers);
-        ResponseEntity<Jewelry[]> responseEntity = restTemplate.exchange(REST_SERVICE_URI + "/test", HttpMethod.GET, requestEntity, Jewelry[].class);
+        ResponseEntity<Jewelry[]> responseEntity = restTemplate.exchange(REST_SERVICE_URI + "/getall", HttpMethod.GET, requestEntity, Jewelry[].class);
         Jewelry[] jewelries = responseEntity.getBody();
         for(Jewelry jewelry : jewelries) {
             System.out.println("Щтрих код: "+jewelry.getBarCode()+", Артикль: "+jewelry.getArticle()
