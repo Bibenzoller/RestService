@@ -61,4 +61,16 @@ public class JewelryController {
 
 		return new ResponseEntity<List<Jewelry>>(result, HttpStatus.OK);
 	}
+
+	@RequestMapping(value = "/test", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
+	public ResponseEntity<List<Jewelry>> test() {
+		List<Jewelry> result = jewelryService.getAllJewelry();
+
+		if (result == null) {
+			System.out.println(" not found");
+			return new ResponseEntity<List<Jewelry>>(HttpStatus.NOT_FOUND);
+		}
+
+		return new ResponseEntity<List<Jewelry>>(result, HttpStatus.OK);
+	}
 } 
