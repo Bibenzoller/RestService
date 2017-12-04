@@ -38,12 +38,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>sqljdbc42</artifactId>
-			<version>4.2</version>
-
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
@@ -91,5 +85,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
 
 </project>
