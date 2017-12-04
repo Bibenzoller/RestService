@@ -6,7 +6,6 @@
 	<groupId>com.concretepage</groupId>
 	<artifactId>spring-boot-demo</artifactId>
 	<version>0.0.1</version>
-	<packaging>jar</packaging>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -36,6 +35,13 @@
 			<version>2.7.0</version>
 			<scope>compile</scope>
 
+		</dependency>
+
+		<dependency>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>4.0</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
