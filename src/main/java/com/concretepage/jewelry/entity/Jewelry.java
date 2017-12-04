@@ -17,17 +17,29 @@ public class Jewelry implements Serializable {
 	private String barCode;
 	public Jewelry() {
 	}
-	public Jewelry(String barCode, String article, String category, String description) {
+	public Jewelry(String barCode, String article, String category, String description, Integer cost) {
 		this.barCode = barCode;
 		this.article = article;
 		this.category = category;
 		this.description = description;
+		this.cost = cost;
 	}
 
 	@Column(name="article")
     private String article;
 	@Column(name="category")
 	private String category;
+
+	public Integer getCost() {
+		return cost;
+	}
+
+	public void setCost(Integer cost) {
+		this.cost = cost;
+	}
+
+	@Column(name="cost")
+	private Integer cost;
 
 	public static long getSerialVersionUID() {
 		return serialVersionUID;

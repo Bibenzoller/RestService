@@ -35,6 +35,7 @@ public class JewelryDAOImpl implements JewelryDAO {
 		jwlry.setArticle(jewelry.getArticle());
 		jwlry.setDescription(jewelry.getDescription());
 		jwlry.setBarCode(jewelry.getBarCode());
+		jwlry.setCost(jewelry.getCost());
 
 		entityManager.flush();
 	}

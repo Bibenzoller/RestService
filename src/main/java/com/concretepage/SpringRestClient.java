@@ -16,7 +16,7 @@ import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 import com.concretepage.auth.entity.User;
 public class SpringRestClient {
-    public static final String REST_SERVICE_URI = "http://localhost:8080/jewelry";
+    public static final String REST_SERVICE_URI = "http://gimbarrwow2.azurewebsites.net/jewelry";
 
     /*
      * Add HTTP Authorization header, using Basic-Authentication to send user-credentials.
@@ -63,7 +63,7 @@ try{
     restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
         Object user = new User("qwerty","qwerty",true);
 
-    HttpEntity<Object> request = new HttpEntity<Object>(user, getHeaders());
+    HttpEntity<Object> request = new HttpEntity<Object>(user);
     ResponseEntity<String> response = restTemplate.exchange(REST_SERVICE_URI+"/add", HttpMethod.POST, request, String.class);
     String result = response.getBody();
     System.out.println(result);}
@@ -98,7 +98,7 @@ try{
             System.out.println("\nTesting create User API----------");
 
             restTemplate.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
-            Object jewelry = new Jewelry("7350037006694","с234ут","серьги","серебро 925");
+            Object jewelry = new Jewelry("7389159856694","к863дв","кольцо","серебро 925", 1024);
 
             HttpEntity<Object> request = new HttpEntity<Object>(jewelry, getHeaders());
 
@@ -129,13 +129,12 @@ try{
         HttpHeaders headers = getHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         RestTemplate restTemplate = getRestTemplate();
-        String url = "http://localhost:8080/jewelry/getall";
         HttpEntity<String> requestEntity = new HttpEntity<String>(headers);
-        ResponseEntity<Jewelry[]> responseEntity = restTemplate.exchange(url, HttpMethod.GET, requestEntity, Jewelry[].class);
+        ResponseEntity<Jewelry[]> responseEntity = restTemplate.exchange(REST_SERVICE_URI + "/getall", HttpMethod.GET, requestEntity, Jewelry[].class);
         Jewelry[] jewelries = responseEntity.getBody();
         for(Jewelry jewelry : jewelries) {
             System.out.println("Щтрих код: "+jewelry.getBarCode()+", Артикль: "+jewelry.getArticle()
-                    +", Категория: "+jewelry.getCategory());}
+                    +", Категория: "+jewelry.getCategory() +", Цена: " +jewelry.getCost());}
     }
 
 
