@@ -4,6 +4,13 @@ install: true
 script: mvn install
 before_script:
  - echo "Starting build"
+ script:
+ mvn install:install-file -Dfile={project.basedir}/lib/sqljdbc42.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc43 -Dversion=4.2 -Dpackaging=jar
+
+script:
+ - mvn clean package
+after_script:
+ - echo "Script finished"
 after_success:
  - echo "Build was successful. $<a href="#">TRAVIS</a>_TEST_RESULT"
 after_failure:
