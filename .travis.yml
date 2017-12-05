@@ -5,7 +5,7 @@ script: mvn install
 before_script:
  - echo "Starting build"
  script:
- mvn install:install-file -Dfile={project.basedir}/lib/sqljdbc42.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc43 -Dversion=4.2 -Dpackaging=jar
+ - mvn install:install-file -Dfile={project.basedir}/lib/sqljdbc42.jar -DgroupId=com.microsoft.sqlserver -DartifactId=sqljdbc43 -Dversion=4.2 -Dpackaging=jar
 before_script:
  - echo "Starting build"
 script:
