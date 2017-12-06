@@ -5,6 +5,8 @@ import com.concretepage.jewelry.entity.Jewelry;
 import com.concretepage.jewelry.service.JewelryService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -21,6 +23,8 @@ import java.util.List;
 @Api(value="jewelry", description="Operations to interact with goods")
 
 public class JewelryController {
+
+	private Logger logger = LoggerFactory.getLogger(JewelryController.class);
 
 	@Autowired
 	private JewelryService jewelryService;
@@ -47,7 +51,7 @@ public class JewelryController {
 
 	@RequestMapping(value = "/get/{barcode}", method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
 	public ResponseEntity<Jewelry> getJewelry(@PathVariable("barcode") String barCode) {
-		System.out.println("Fetching Jewelry with barcode " + barCode);
+
 		Jewelry jewelry = jewelryService.getJewelryByBarCode(barCode);
 
 		if (jewelry == null) {

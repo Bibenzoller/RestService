@@ -60,11 +60,11 @@ public class RestClientUtil {/*
         restTemplate.exchange(url, HttpMethod.DELETE, requestEntity, Void.class, 4);
     }
     public static void main(String args[]) {
-        RestClientUtil util = new RestClientUtil();
-        util.addArticleDemo();
-        //util.getArticleByIdDemo();
-        //util.getAllArticlesDemo();
-        //util.updateArticleDemo();
-        //util.deleteArticleDemo();
+        RestClientUtil acpects = new RestClientUtil();
+        acpects.addArticleDemo();
+        //acpects.getArticleByIdDemo();
+        //acpects.getAllArticlesDemo();
+        //acpects.updateArticleDemo();
+        //acpects.deleteArticleDemo();
     }*/
 }
