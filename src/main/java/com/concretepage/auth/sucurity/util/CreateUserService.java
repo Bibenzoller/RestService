@@ -44,11 +44,12 @@ public class CreateUserService {
 
     public CreateUserService loadUserByUsername(User user){
 
-
+       if (user != null){
         List<String > authorities =
                 buildUserAuthority(user.getUserRole());
 
-        return build(user, authorities);
+        return build(user, authorities);}
+        else  return null;
     }
 
     // Converts com.mkyong.users.model.User user to

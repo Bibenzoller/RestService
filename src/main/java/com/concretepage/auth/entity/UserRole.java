@@ -55,6 +55,15 @@ public class UserRole{
         this.user = user;
     }
 
+    @Override
+    public String toString() {
+        return "UserRole{" +
+                "userRoleId=" + userRoleId +
+                ", user=" + user +
+                ", role='" + role + '\'' +
+                '}';
+    }
+
     @Column(name = "role", nullable = false, length = 45)
     @ApiModelProperty(notes = "The Role of user")
 
