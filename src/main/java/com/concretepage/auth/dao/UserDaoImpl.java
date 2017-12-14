@@ -1,14 +1,14 @@
 package com.concretepage.auth.dao;
 
-import java.util.List;
-
+import com.concretepage.auth.entity.User;
 import com.concretepage.auth.entity.UserRole;
 import org.springframework.stereotype.Repository;
-import com.concretepage.auth.entity.User;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.List;
+
 @Transactional
 @Repository
 public class UserDaoImpl implements UserDao {

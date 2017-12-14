@@ -60,7 +60,7 @@ public class LoggerAspect {
 
         if(returnValue !=null)
         {
-           LOGGER.debug("Method return: "+returnValue.toString());
+            LOGGER.debug("Method return: "+returnValue.toString());
         }
         else{
             LOGGER.error("Method "+ joinPoint.getSignature().getName()+" return nothing");
