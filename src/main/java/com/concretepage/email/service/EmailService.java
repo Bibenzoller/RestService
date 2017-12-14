@@ -1,5 +1,6 @@
 package com.concretepage.email.service;
 import com.concretepage.jewelry.entity.Order;
+import org.springframework.core.io.FileSystemResource;
 
 
 /**

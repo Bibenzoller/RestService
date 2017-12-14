@@ -1,7 +1,11 @@
 package com.concretepage.jewelry.entity;
+import com.concretepage.auth.entity.User;
+import io.swagger.annotations.ApiModelProperty;
 
 import java.io.Serializable;
 import java.util.List;
+
+import javax.persistence.*;
 
 
 public class Order implements Serializable {

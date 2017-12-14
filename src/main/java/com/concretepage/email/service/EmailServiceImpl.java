@@ -3,19 +3,30 @@ package com.concretepage.email.service;
 import com.concretepage.MyApplication;
 import com.concretepage.excel.ApachePOIExcelWrite;
 import com.concretepage.jewelry.entity.Jewelry;
-import com.concretepage.jewelry.entity.Order;
+import org.apache.catalina.webresources.FileResource;
+import org.apache.poi.util.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.InputStreamSource;
+import org.springframework.mail.MailException;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.stereotype.Component;
 
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+import javax.mail.util.ByteArrayDataSource;
+
+import com.concretepage.jewelry.entity.Order;
+
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 
 /**
  * Created by Olga on 7/15/2016.

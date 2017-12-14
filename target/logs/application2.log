@@ -1,0 +1,284 @@
+"2017-12-13 23:03:05 [main] INFO  com.concretepage.MyApplication - Starting MyApplication v0.0.1 on DESKTOP-BHJH16O with PID 2968 (C:\Users\Занятия\Documents\GitHub\RestService\target\spring-boot-demo-0.0.1.jar started by Занятия in C:\Users\Занятия\Documents\GitHub\RestService\target)
+""2017-12-13 23:03:05 [main] DEBUG com.concretepage.MyApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-12-13 23:03:05 [main] INFO  com.concretepage.MyApplication - No active profile set, falling back to default profiles: default
+""2017-12-13 23:03:05 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736e9adb: startup date [Wed Dec 13 23:03:05 MSK 2017]; root of context hierarchy
+""2017-12-13 23:03:08 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3350e4e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-13 23:03:08 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$7c631b06] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-13 23:03:10 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+""2017-12-13 23:03:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-12-13 23:03:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+""2017-12-13 23:03:10 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-12-13 23:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-12-13 23:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-12-13 23:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-12-13 23:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-12-13 23:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-12-13 23:03:11 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-12-13 23:03:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-12-13 23:03:17 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-12-13 23:03:17 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-12-13 23:03:17 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-12-13 23:03:17 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-12-13 23:03:18 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-12-13 23:03:18 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+""2017-12-13 23:03:19 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-12-13 23:03:21 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-12-13 23:03:25 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+""2017-12-13 23:03:25 [main] INFO  c.c.j.controller.JewelryController - Enable Caching
+""2017-12-13 23:03:30 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-12-13 23:03:30 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2017-12-13 23:03:30 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2017-12-13 23:03:30 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 3 custom documentation plugin(s)
+""2017-12-13 23:03:30 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:03:30 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:03:30 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:03:31 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+""2017-12-13 23:03:31 [main] INFO  com.concretepage.MyApplication - Started MyApplication in 26.464 seconds (JVM running for 27.229)
+""2017-12-13 23:03:37 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-12-13 23:07:52 [main] INFO  com.concretepage.MyApplication - Starting MyApplication v0.0.1 on DESKTOP-BHJH16O with PID 5796 (C:\Users\Занятия\Documents\GitHub\RestService\target\spring-boot-demo-0.0.1.jar started by Занятия in C:\Users\Занятия\Documents\GitHub\RestService\target)
+""2017-12-13 23:07:52 [main] DEBUG com.concretepage.MyApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-12-13 23:07:52 [main] INFO  com.concretepage.MyApplication - No active profile set, falling back to default profiles: default
+""2017-12-13 23:07:53 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736e9adb: startup date [Wed Dec 13 23:07:53 MSK 2017]; root of context hierarchy
+""2017-12-13 23:07:55 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8b495ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-13 23:07:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f1c6cbd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-13 23:07:57 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+""2017-12-13 23:07:57 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-12-13 23:07:57 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+""2017-12-13 23:07:57 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-12-13 23:09:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-12-13 23:09:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-12-13 23:09:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-12-13 23:09:07 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-12-13 23:09:07 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-12-13 23:09:07 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-12-13 23:09:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-12-13 23:09:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-12-13 23:09:13 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-12-13 23:09:13 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-12-13 23:09:13 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-12-13 23:09:13 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-12-13 23:09:14 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+""2017-12-13 23:09:15 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-12-13 23:09:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-12-13 23:09:22 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+""2017-12-13 23:09:22 [main] INFO  c.c.j.controller.JewelryController - Enable Caching
+""2017-12-13 23:09:26 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-12-13 23:09:26 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2017-12-13 23:09:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2017-12-13 23:09:26 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 3 custom documentation plugin(s)
+""2017-12-13 23:09:26 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:09:27 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:09:27 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:09:27 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+""2017-12-13 23:09:27 [main] INFO  com.concretepage.MyApplication - Started MyApplication in 95.165 seconds (JVM running for 95.8)
+""2017-12-13 23:25:34 [main] INFO  com.concretepage.MyApplication - Starting MyApplication v0.0.1 on DESKTOP-BHJH16O with PID 6120 (C:\Users\Занятия\Documents\GitHub\RestService\target\spring-boot-demo-0.0.1.jar started by Занятия in C:\Users\Занятия\Documents\GitHub\RestService\target)
+""2017-12-13 23:25:34 [main] DEBUG com.concretepage.MyApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-12-13 23:25:34 [main] INFO  com.concretepage.MyApplication - No active profile set, falling back to default profiles: default
+""2017-12-13 23:25:34 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736e9adb: startup date [Wed Dec 13 23:25:34 MSK 2017]; root of context hierarchy
+""2017-12-13 23:25:37 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8b495ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-13 23:25:37 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f1c6cbd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-13 23:25:38 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+""2017-12-13 23:25:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-12-13 23:25:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-12-13 23:25:39 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-12-13 23:25:45 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-12-13 23:25:45 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-12-13 23:25:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-12-13 23:25:45 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-12-13 23:25:45 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-12-13 23:25:45 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-12-13 23:25:46 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+""2017-12-13 23:25:47 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-12-13 23:25:49 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-12-13 23:25:53 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+""2017-12-13 23:25:53 [main] INFO  c.c.j.controller.JewelryController - Enable Caching
+""2017-12-13 23:25:57 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-12-13 23:25:57 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2017-12-13 23:25:57 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2017-12-13 23:25:57 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 3 custom documentation plugin(s)
+""2017-12-13 23:25:58 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:25:58 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:25:58 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-13 23:25:58 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+""2017-12-13 23:25:58 [main] INFO  com.concretepage.MyApplication - Started MyApplication in 24.901 seconds (JVM running for 25.549)
+""2017-12-14 00:40:53 [main] INFO  com.concretepage.MyApplication - Starting MyApplication v0.0.1 on DESKTOP-BHJH16O with PID 13108 (C:\Users\Занятия\Documents\GitHub\RestService\target\spring-boot-demo-0.0.1.jar started by Занятия in C:\Users\Занятия\Documents\GitHub\RestService\target)
+""2017-12-14 00:40:53 [main] DEBUG com.concretepage.MyApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-12-14 00:40:53 [main] INFO  com.concretepage.MyApplication - No active profile set, falling back to default profiles: default
+""2017-12-14 00:40:53 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736e9adb: startup date [Thu Dec 14 00:40:53 MSK 2017]; root of context hierarchy
+""2017-12-14 00:40:56 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8b495ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-14 00:40:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f1c6cbd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-14 00:40:58 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+""2017-12-14 00:40:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-12-14 00:40:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+""2017-12-14 00:40:59 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-12-14 00:41:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-12-14 00:41:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-12-14 00:41:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-12-14 00:41:00 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-12-14 00:41:00 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-12-14 00:41:00 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-12-14 00:41:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-12-14 00:41:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-12-14 00:41:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-12-14 00:41:06 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-12-14 00:41:06 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-12-14 00:41:06 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-12-14 00:41:06 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+""2017-12-14 00:41:08 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-12-14 00:41:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-12-14 00:41:15 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+""2017-12-14 00:41:15 [main] INFO  c.c.j.controller.JewelryController - Enable Caching
+""2017-12-14 00:41:20 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-12-14 00:41:20 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2017-12-14 00:41:20 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2017-12-14 00:41:20 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 3 custom documentation plugin(s)
+""2017-12-14 00:41:20 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-14 00:41:20 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-14 00:41:20 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-14 00:41:20 [main] ERROR o.a.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-8081"]
+"java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.concretepage.MyApplication.main(MyApplication.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+"2017-12-14 00:41:20 [main] ERROR o.a.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-8081]]
+"org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8081]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.concretepage.MyApplication.main(MyApplication.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 21 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 22 common frames omitted
+"2017-12-14 00:41:20 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+""2017-12-14 00:41:21 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-12-14 00:41:21 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
+
+""2017-12-14 00:41:21 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736e9adb: startup date [Thu Dec 14 00:40:53 MSK 2017]; root of context hierarchy
+""2017-12-14 00:41:21 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+""2017-12-14 00:41:21 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-12-14 00:41:21 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2017-12-14 00:41:34 [main] INFO  com.concretepage.MyApplication - Starting MyApplication v0.0.1 on DESKTOP-BHJH16O with PID 2192 (C:\Users\Занятия\Documents\GitHub\RestService\target\spring-boot-demo-0.0.1.jar started by Занятия in C:\Users\Занятия\Documents\GitHub\RestService\target)
+""2017-12-14 00:41:34 [main] DEBUG com.concretepage.MyApplication - Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+""2017-12-14 00:41:34 [main] INFO  com.concretepage.MyApplication - No active profile set, falling back to default profiles: default
+""2017-12-14 00:41:35 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@736e9adb: startup date [Thu Dec 14 00:41:35 MSK 2017]; root of context hierarchy
+""2017-12-14 00:41:37 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8b495ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-14 00:41:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f1c6cbd8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-12-14 00:41:39 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8081 (http)
+""2017-12-14 00:41:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2017-12-14 00:41:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.20
+""2017-12-14 00:41:40 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-12-14 00:41:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-12-14 00:41:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-12-14 00:41:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-12-14 00:41:41 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-12-14 00:41:41 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2017-12-14 00:41:41 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-12-14 00:41:47 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2017-12-14 00:41:47 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2017-12-14 00:41:47 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2017-12-14 00:41:47 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2017-12-14 00:41:47 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2017-12-14 00:41:47 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2017-12-14 00:41:48 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServerDialect
+""2017-12-14 00:41:49 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2017-12-14 00:41:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2017-12-14 00:41:56 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+""2017-12-14 00:41:56 [main] INFO  c.c.j.controller.JewelryController - Enable Caching
+""2017-12-14 00:42:01 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-12-14 00:42:01 [main] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2017-12-14 00:42:01 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2017-12-14 00:42:01 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 3 custom documentation plugin(s)
+""2017-12-14 00:42:01 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-14 00:42:02 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-14 00:42:02 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2017-12-14 00:42:02 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8081 (http)
+""2017-12-14 00:42:02 [main] INFO  com.concretepage.MyApplication - Started MyApplication in 28.42 seconds (JVM running for 29.253)
+"
