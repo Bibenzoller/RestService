@@ -55,7 +55,7 @@ public class CreateUserService {
     // Converts com.mkyong.users.model.User user to
     // org.springframework.security.core.userdetails.User
     private CreateUserService build(com.concretepage.auth.entity.User user,
-                                            List<String> authorities) {
+                                    List<String> authorities) {
         this.username = user.getUsername();
         this.password = user.getPassword();
         this.grantedAuthority = authorities;

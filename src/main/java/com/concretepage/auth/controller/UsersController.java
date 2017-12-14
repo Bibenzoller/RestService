@@ -1,5 +1,4 @@
 package com.concretepage.auth.controller;
-import java.util.*;
 
 import com.concretepage.auth.entity.Login;
 import com.concretepage.auth.entity.User;
@@ -14,9 +13,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.util.UriComponentsBuilder;
-
-import javax.validation.constraints.Null;
 
 
 @RestController
@@ -34,7 +30,7 @@ public class UsersController {
 	}
 
 	@ApiOperation(value = "Add user to DB",response = String.class)
-	@PostMapping(value = "/add",produces = {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
+	@PostMapping(value = "/add",produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
 	public ResponseEntity<Void> createUser(@RequestBody User user) {
 
 		HttpHeaders headers = new HttpHeaders();
