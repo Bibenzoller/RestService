@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.concretepage.JewelryControllerTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.521 sec - in com.concretepage.JewelryControllerTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.369 sec - in com.concretepage.JewelryControllerTest
