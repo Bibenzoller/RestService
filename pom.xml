@@ -76,9 +76,11 @@
 		</dependency>
 
 		<!--MySQL JDBC Type 4 driver-->
+
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901.jdbc4</version>
 		</dependency>
 
 		<!--Spring Boot Developer Tools-->
