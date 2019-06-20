@@ -78,9 +78,9 @@
 		<!--MySQL JDBC Type 4 driver-->
 
 		<dependency>
-			<groupId>org.postgresql</groupId>
+			<groupId>postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.2.5</version>
+			<version>9.1-901.jdbc4</version>
 		</dependency>
 
 		<!--Spring Boot Developer Tools-->
