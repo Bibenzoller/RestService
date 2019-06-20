@@ -60,13 +60,13 @@ public class UsersController {
 
 	@ApiOperation(value = "Login",response = String.class)
 	@PostMapping(value = "/login", produces = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseEntity<Void> login (@RequestBody Login login) {
+	public ResponseEntity<Void> login (@RequestBody Login login) {
 
-        if(!userService.userExists(login.getUsername(),login.getPassword()))
-            return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
-        else if(userService.userExists(login.getUsername(),login.getPassword())
-                &&!userService.getUserByUsername(login.getUsername()).isEnabled())
-            return new ResponseEntity<Void>(HttpStatus.FORBIDDEN);
-        else return new ResponseEntity<Void>( HttpStatus.OK);
-    }
-} 
+		if(!userService.userExists(login.getUsername(),login.getPassword()))
+			return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+		else if(userService.userExists(login.getUsername(),login.getPassword())
+				&&!userService.getUserByUsername(login.getUsername()).isEnabled())
+			return new ResponseEntity<Void>(HttpStatus.FORBIDDEN);
+		else return new ResponseEntity<Void>( HttpStatus.OK);
+	}
+}
