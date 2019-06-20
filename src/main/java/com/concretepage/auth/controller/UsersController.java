@@ -64,6 +64,9 @@ public class UsersController {
 
 		if(!userService.userExists(login.getUsername(),login.getPassword()))
 			return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
+		else if(userService.userExists(login.getUsername(),login.getPassword())
+		&&!userService.getUserByUsername(login.getUsername()).isEnabled())
+			return new ResponseEntity<Void>(HttpStatus.FORBIDDEN);
 		else return new ResponseEntity<Void>( HttpStatus.OK);
 	}
 } 
