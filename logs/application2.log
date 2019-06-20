@@ -379,4 +379,50 @@
 ""2017-12-14 06:17:28 [http-nio-8080-exec-3] DEBUG com.concretepage.MyApplication - Parametrs: Order{orderContent=[Jewelry{barCode='string', article='string', category='string', cost=0, description='string'}], username='string', totalCost=0}
 ""2017-12-14 06:17:28 [http-nio-8080-exec-3] INFO  com.concretepage.MyApplication - Sending Email to string
 ""2017-12-14 06:17:35 [http-nio-8080-exec-3] DEBUG com.concretepage.MyApplication - Method return: <200 OK,{}>
+""2019-06-20 08:15:58 [restartedMain] INFO  com.concretepage.MyApplication - Starting MyApplication on DESKTOP-OT7UD3I with PID 13968 (started by Михаил in C:\Users\Михаил\IdeaProjects\RestService)
+""2019-06-20 08:15:58 [restartedMain] DEBUG com.concretepage.MyApplication - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+""2019-06-20 08:15:58 [restartedMain] INFO  com.concretepage.MyApplication - No active profile set, falling back to default profiles: default
+""2019-06-20 08:15:59 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ad8fca8: startup date [Thu Jun 20 08:15:59 MSK 2019]; root of context hierarchy
+""2019-06-20 08:16:06 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fbdb9e42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2019-06-20 08:16:11 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2019-06-20 08:16:11 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2019-06-20 08:16:11 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+""2019-06-20 08:16:12 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2019-06-20 08:16:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2019-06-20 08:16:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2019-06-20 08:16:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2019-06-20 08:16:15 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2019-06-20 08:16:15 [localhost-startStop-1] INFO  o.s.b.w.s.DelegatingFilterProxyRegistrationBean - Mapping filter: 'springSecurityFilterChain' to: [/*]
+""2019-06-20 08:16:15 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2019-06-20 08:16:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+""2019-06-20 08:16:18 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+""2019-06-20 08:16:19 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+""2019-06-20 08:16:19 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+""2019-06-20 08:16:19 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+""2019-06-20 08:16:19 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+""2019-06-20 08:16:27 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+""2019-06-20 08:16:45 [restartedMain] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+""2019-06-20 08:16:45 [restartedMain] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@28b6874d
+""2019-06-20 08:16:47 [restartedMain] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+""2019-06-20 08:16:49 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2019-06-20 08:17:00 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+""2019-06-20 08:17:13 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+""2019-06-20 08:17:13 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2019-06-20 08:17:13 [restartedMain] INFO  o.s.c.s.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+""2019-06-20 08:17:13 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+""2019-06-20 08:17:13 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 2 custom documentation plugin(s)
+""2019-06-20 08:17:13 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2019-06-20 08:17:14 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+""2019-06-20 08:17:15 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2019-06-20 08:17:15 [restartedMain] INFO  com.concretepage.MyApplication - Started MyApplication in 77.689 seconds (JVM running for 80.287)
+""2019-06-20 08:17:28 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2019-06-20 08:18:06 [http-nio-8080-exec-9] DEBUG com.concretepage.MyApplication - New request!
+""2019-06-20 08:18:06 [http-nio-8080-exec-9] DEBUG com.concretepage.MyApplication - method : login
+""2019-06-20 08:18:06 [http-nio-8080-exec-9] DEBUG com.concretepage.MyApplication - Parametrs: Login{username='string', password='string'}
+""2019-06-20 08:18:06 [http-nio-8080-exec-9] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+""2019-06-20 08:18:07 [http-nio-8080-exec-9] WARN  o.h.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 70 in HQL: [FROM com.concretepage.auth.entity.User as atcl WHERE atcl.username = ? and atcl.password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+""2019-06-20 08:18:07 [http-nio-8080-exec-9] WARN  o.h.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 92 in HQL: [FROM com.concretepage.auth.entity.User as atcl WHERE atcl.username = ? and atcl.password = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+""2019-06-20 08:18:07 [http-nio-8080-exec-9] DEBUG com.concretepage.MyApplication - Method return: <200 OK,{}>
 "
